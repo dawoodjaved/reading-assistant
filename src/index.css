@@ -1,0 +1,234 @@
+/* Home component */
+.home > .btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home > .btn-container > button {
+  transform: translateY(-40px);
+  margin-bottom: 20px;
+  font-size: 23px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.home > .btn-container > button:hover {
+  width: 200px;
+  height: 200px;
+}
+
+/* CameraForm component */
+.camera-container {
+  transform: translateY(20px);
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  padding: 10px;
+}
+
+.capture-container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  bottom: 30px;
+}
+
+.capture-btn {
+  transition: 0.2s;
+}
+
+.capture-btn:hover {
+  transform: scale(1.12);
+}
+
+.capture-btn i {
+  color: #1e88e5;
+}
+
+/* ListenForm component */
+.text-container {
+  margin-top: 20px;
+  width: 600px;
+  height: 50vh;
+  background: grey;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-container span {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #444;
+}
+
+.login-form {
+  max-width: 55%;
+  min-width: 300px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 40px 20px 40px;
+  border-radius: 2px;
+-webkit-box-shadow: 2px 2px 6px 0px rgba(50, 50, 50, 0.32);
+-moz-box-shadow:    2px 2px 6px 0px rgba(50, 50, 50, 0.32);
+box-shadow:         2px 2px 6px 0px rgba(50, 50, 50, 0.32);
+}
+
+.login-form > p {
+  margin-bottom: 30px;
+}
+
+.login-btn {
+  margin-top: 20px;
+  /* margin-bottom: 15px; */
+  width: 100%;
+}
+
+.signUp-form {
+  max-width: 65%;
+  min-width: 450px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 40px 20px 40px;
+  border-radius: 2px;
+-webkit-box-shadow: 2px 2px 6px 0px rgba(50, 50, 50, 0.32);
+-moz-box-shadow:    2px 2px 6px 0px rgba(50, 50, 50, 0.32);
+box-shadow:         2px 2px 6px 0px rgba(50, 50, 50, 0.32);
+}
+
+.signUp-form > p {
+  margin-bottom: 20px;
+}
+
+.signUp-form > .row {
+  margin: 0px;
+  padding: 0px;
+}
+
+.signUp-form > .row > .col:nth-child(1) {
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.signUp-form > .row > .col:nth-child(1) > label {
+  left: -0.6px;
+}
+
+.signUp-form > .row > .col:nth-child(2) {
+  padding-right: 0px;
+  margin: 0px;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: #1e88e5;
+  box-shadow: none;
+}
+
+html,body{
+  margin:0;
+  height:100%;
+}
+
+img{
+  display:block;
+  width:75%; height:30%;
+  object-fit: cover;
+  padding-left: 270px;
+}
+
+.captureButton {
+  height: 50px;
+  width: 50px;  
+}
+
+.webcam-container {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1e88e5;
+  margin-top: 20px;
+  width: 90%;
+  padding: 10px;
+}
+
+.webcam-container > .webcam {
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.dashboard > img {
+  width: 70%;
+  padding: 0px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
+.upload-image {
+  margin-top: 30px;
+}
+
+.upload-image > .dzu-dropzone {
+  overflow: hidden;
+  width: 70%;
+  height: 320px;
+  border: 5px dashed #90a4ae;
+  background: #eceff1;
+}
+
+.upload-image > .dzu-dropzone > .dzu-inputLabel {
+  color: #90a4ae;
+}
+
+.upload-image > .dzu-dropzone > .dzu-previewContainer {
+  display: flex;
+  flex-direction: column;
+}
+.upload-image > .dzu-dropzone > .dzu-previewContainer > .dzu-previewImage {
+  padding: 0px;
+  margin: 0px;
+  min-height: 150px;
+  max-width: 300px;
+}
+
+.upload-image > .dzu-dropzone > .dzu-previewContainer > .dzu-previewStatusContainer {
+  margin-top: 15px;
+}
+
+.upload-image > .dzu-dropzone > .dzu-submitButtonContainer > button {
+  background-color: #1e88e5;
+  color: white;
+  font-weight: lighter;
+  width: 100px;
+}
+
+.preview-image-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.preview-image {
+  width: 60%;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
